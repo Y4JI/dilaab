@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Trent Vance</title>
-    <!-- UPDATED PATH -->
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,24 +13,33 @@
     <header class="site-header">
         <div class="main-header">
             <div class="logo">
-                <!-- UPDATED PATH -->
                 <a href="../index.html">
                     <h1>TRENT<span>VANCE</span></h1>
-                    <!-- UPDATED PATH -->
                     <img src="../images/logo.png" alt="Logo" class="header-logo">
                 </a>
                 <p>MOTIVATIONAL SPEAKER</p>
             </div>
             <nav>
-                <ul>
-                    <!-- UPDATED PATHS -->
+                <ul class="desktop-nav">
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="services.html" class="active">SERVICES</a></li>
                     <li><a href="about-contact.html">ABOUT & CONTACT</a></li>
                 </ul>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
             </nav>
         </div>
     </header>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about-contact.html">ABOUT & CONTACT</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="page-hero">
@@ -40,7 +49,7 @@
             </div>
         </section>
 
-        <section class="services-content">
+        <section class="services-content reveal">
             <div class="service-item">
                 <h3>Motivational Speaking</h3>
                 <p>Ignite passion and drive in your audience with powerful, high-energy presentations. Trent's motivational talks are designed to inspire action, overcome adversity, and foster a mindset of relentless progress. Perfect for conferences, company kick-offs, and sales meetings.</p>
@@ -63,10 +72,9 @@
             </div>
         </section>
         
-        <section class="cta-section">
+        <section class="cta-section reveal">
             <h2>Ready to Ignite Your Event?</h2>
             <p>Booking is the first step towards an unforgettable experience for your audience. Let's discuss your goals and how we can create a powerful, customized presentation that delivers results.</p>
-            <!-- UPDATED PATH -->
             <a href="about-contact.html" class="cta-button-large">Book a Free Consultation</a>
         </section>
     </main>
@@ -75,7 +83,7 @@
         <p>&copy; 2025 Trent Vance Motivational Speaker. All Rights Reserved.</p>
     </footer>
 
-    <!-- UPDATED PATH -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../scripts/script.js"></script>
 
 </body>

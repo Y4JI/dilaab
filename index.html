@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trent Vance - Motivational Speaker</title>
-    <!-- UPDATED PATH -->
-    <link rel="stylesheet" href="styles/style.css"> 
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- ADDED: Link to Swiper.js CSS for the slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,28 +16,38 @@
             <div class="logo">
                 <a href="index.html">
                     <h1>TRENT<span>VANCE</span></h1>
-                    <!-- UPDATED PATH -->
                     <img src="images/logo.png" alt="Logo" class="header-logo">
                 </a>
                 <p>MOTIVATIONAL SPEAKER</p>
             </div>
             <nav>
-                <ul>
+                <ul class="desktop-nav">
                     <li><a href="index.html" class="active">HOME</a></li>
-                    <!-- UPDATED PATHS -->
                     <li><a href="pages/services.html">SERVICES</a></li>
                     <li><a href="pages/about-contact.html">ABOUT & CONTACT</a></li>
                 </ul>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
             </nav>
         </div>
     </header>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pages/services.html">SERVICES</a></li>
+            <li><a href="pages/about-contact.html">ABOUT & CONTACT</a></li>
+        </ul>
+    </nav>
+
 
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h2>THERE ARE<br>ONLY TWO OPTIONS:</h2>
                 <h3>MAKE PROGRESS OR MAKE EXCUSES.</h3>
-                <!-- UPDATED PATH -->
                 <a href="pages/services.html" class="cta-button">Explore My Services</a>
             </div>
             <a href="#quote-form" class="scroll-down-arrow"></a>
@@ -52,7 +63,7 @@
             </form>
         </section>
 
-        <section class="categories">
+        <section class="categories reveal">
             <h2>SPEAKING <span>CATEGORIES</span></h2>
             <div class="category-grid">
                 <div class="category-item">
@@ -82,7 +93,7 @@
             </div>
         </section>
 
-        <section class="recommended">
+        <section class="recommended reveal">
             <h3>RECOMMENDED</h3>
             <div class="video-grid">
                 <div class="video-item">
@@ -106,7 +117,7 @@
             </div>
         </section>
 
-        <section class="whats-new">
+        <section class="whats-new reveal">
             <h2>WHAT'S NEW?</h2>
             <div class="new-content-grid">
                 <div class="article-card">
@@ -138,7 +149,8 @@
         <p>&copy; 2025 Trent Vance Motivational Speaker. All Rights Reserved.</p>
     </footer>
 
-    <!-- UPDATED PATH -->
+    <!-- ADDED: Link to Swiper.js JavaScript for the slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 
 </body>
