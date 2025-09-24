@@ -313,9 +313,9 @@ nav .desktop-nav li a:active, nav .desktop-nav li a:hover {
 .video-item { width: 300px; }
 .video-placeholder { height: 170px; margin-bottom: 15px; border: 4px solid #e9e9e9; background-size: cover; background-position: center; position: relative; cursor: pointer; }
 .video-item h4 { font-family: 'Montserrat', sans-serif; font-size: 18px; margin: 0; }
-.video-1 { background-image: url('../images/thumb-wisdom.jpg'); }
-.video-2 { background-image: url('../images/thumb-survival.jpg'); }
-.video-3 { background-image: url('../images/thumb-job.jpg'); }
+.video-1 { background-image: url('../images/white-chess-pieces-chess-board-king-concept.jpg'); }
+.video-2 { background-image: url('../images/closeup-shot-water-flowing-through-mossy-ground.jpg'); }
+.video-3 { background-image: url('../images/office-workers-working-together-as-team.jpg'); }
 .play-button-overlay { width: 60px; height: 60px; background-color: rgba(243, 111, 33, 0.8); border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: background-color 0.3s ease; }
 .play-button-overlay::after { content: ''; display: block; width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 20px solid #fff; position: absolute; top: 50%; left: 50%; transform: translate(-40%, -50%); }
 .video-placeholder:hover .play-button-overlay { background-color: rgba(243, 111, 33, 1); }
@@ -324,7 +324,7 @@ nav .desktop-nav li a:active, nav .desktop-nav li a:hover {
 .new-content-grid { display: flex; justify-content: center; gap: 30px; }
 .article-card, .events-list { width: 30%; }
 .article-image { height: 150px; background-color: #555; margin-bottom: 15px; background-size: cover; background-position: center; }
-.article-1 { background-image: url('../images/article1.jpg'); }
+.article-1 { background-image: url('../images/businessmen-shaking-hands-near-glass-building.jpg'); }
 .article-2 { background-image: url('../images/full-shot-woman-climbing-mountains.jpg'); background-position: center 25%; }
 .article-card h4 { color: #f36f21; font-size: 18px; }
 .article-card p { color: #a9a9a9; font-size: 14px; line-height: 1.6; }
