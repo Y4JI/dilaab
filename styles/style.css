@@ -38,7 +38,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* CHANGED: Increased padding for larger logo */
     padding: 30px 50px; 
 }
 
@@ -67,7 +66,6 @@ body {
 
 /* Style for the logo image */
 .header-logo {
-    /* CHANGED: Logo height is now 100px */
     height: 60px;
     margin-left: 5px;
 }
@@ -108,7 +106,8 @@ nav ul li a.active, nav ul li a:hover {
 /* ========================================= */
 .hero {
     min-height: 100vh;
-    background-image: url('images/execspeech.jpg');
+    /* CORRECTED PATH */
+    background-image: url('../images/execspeech.jpg');
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -300,16 +299,17 @@ nav ul li a.active, nav ul li a:hover {
     margin: 0;
 }
 
+/* CORRECTED PATHS */
 .video-1 {
-    background-image: url('./images/white-chess-pieces-chess-board-king-concept.jpg');
+    background-image: url('../images/white-chess-pieces-chess-board-king-concept.jpg');
 }
 
 .video-2 {
-    background-image: url('./images/closeup-shot-water-flowing-through-mossy-ground.jpg');
+    background-image: url('../images/closeup-shot-water-flowing-through-mossy-ground.jpg');
 }
 
 .video-3 {
-    background-image: url('./images/office-workers-working-together-as-team.jpg');
+    background-image: url('../images/office-workers-working-together-as-team.jpg');
 }
 
 
@@ -386,9 +386,10 @@ nav ul li a.active, nav ul li a:hover {
     background-size: cover;
     background-position: center;
 }
-.article-1 { background-image: url('./images/businessmen-shaking-hands-near-glass-building.jpg'); }
+/* CORRECTED PATHS */
+.article-1 { background-image: url('../images/businessmen-shaking-hands-near-glass-building.jpg'); }
 .article-2 { 
-    background-image: url('./images/full-shot-woman-climbing-mountains.jpg'); 
+    background-image: url('../images/full-shot-woman-climbing-mountains.jpg'); 
     background-position: center 25%;
 }
 
@@ -434,8 +435,9 @@ nav ul li a.active, nav ul li a:hover {
 /* ========================================= */
 
 .page-hero {
-    padding: 200px 20px 100px 20px; /* Adjusted padding to account for taller header */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/execspeech.jpg');
+    padding: 200px 20px 100px 20px;
+    /* CORRECTED PATH */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/execspeech.jpg');
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -524,7 +526,8 @@ nav ul li a.active, nav ul li a:hover {
     flex-basis: 40%;
     height: 400px;
     background-color: #ccc;
-    background-image: url('./images/speaker-portrait.jpg');
+    /* CORRECTED PATH */
+    background-image: url('../images/speaker-portrait.jpg');
     background-size: cover;
     background-position: center top;
 }
