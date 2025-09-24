@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const swiper = new Swiper('.testimonials-slider', {
             loop: true,
             autoplay: {
-                delay: 1000,
+                delay: 1100,
                 disableOnInteraction: false,
             },
             pagination: {
