@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trent Vance - Motivational Speaker</title>
     <link rel="stylesheet" href="styles/style.css">
-    <!-- ADDED: Link to Swiper.js CSS for the slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -26,14 +25,12 @@
                     <li><a href="pages/services.html">SERVICES</a></li>
                     <li><a href="pages/about-contact.html">ABOUT & CONTACT</a></li>
                 </ul>
-                <!-- Mobile Menu Button -->
                 <button class="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
                     <span class="sr-only">Menu</span>
                 </button>
             </nav>
         </div>
     </header>
-    <!-- Mobile Navigation -->
     <nav class="mobile-nav" id="mobile-nav">
         <ul>
             <li><a href="index.html">HOME</a></li>
@@ -41,7 +38,6 @@
             <li><a href="pages/about-contact.html">ABOUT & CONTACT</a></li>
         </ul>
     </nav>
-
 
     <main>
         <section class="hero">
@@ -52,7 +48,6 @@
             </div>
             <a href="#quote-form" class="scroll-down-arrow"></a>
         </section>
-
         <section id="quote-form" class="quote-form">
             <h4>REQUEST FREE QUOTES</h4>
             <form>
@@ -62,7 +57,6 @@
                 <button type="submit">SEND</button>
             </form>
         </section>
-
         <section class="categories reveal">
             <h2>SPEAKING <span>CATEGORIES</span></h2>
             <div class="category-grid">
@@ -92,7 +86,6 @@
                 </div>
             </div>
         </section>
-
         <section class="recommended reveal">
             <h3>RECOMMENDED</h3>
             <div class="video-grid">
@@ -116,7 +109,6 @@
                 </div>
             </div>
         </section>
-
         <section class="whats-new reveal">
             <h2>WHAT'S NEW?</h2>
             <div class="new-content-grid">
@@ -149,7 +141,9 @@
         <p>&copy; 2025 Trent Vance Motivational Speaker. All Rights Reserved.</p>
     </footer>
 
-    <!-- ADDED: Link to Swiper.js JavaScript for the slider -->
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 

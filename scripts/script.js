@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const testimonialsSlider = document.querySelector('.testimonials-slider');
     if (testimonialsSlider) {
         const swiper = new Swiper('.testimonials-slider', {
-            // Optional parameters
             loop: true,
             autoplay: {
                 delay: 5000,
@@ -54,24 +53,40 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.1 // Trigger when 10% of the element is visible
+        threshold: 0.1
     });
 
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
 
-    // --- 5. Responsive Mobile Navigation ---
+    // --- 5. UPDATED: Responsive Mobile Navigation with Overlay ---
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
-    const mainContent = document.querySelector('main');
+    const overlay = document.querySelector('.overlay');
 
+    // Function to close the menu
+    function closeMenu() {
+        mobileNavToggle.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+
+    // Toggle menu with button
     mobileNavToggle.addEventListener('click', () => {
         const isExpanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
-        mobileNavToggle.setAttribute('aria-expanded', !isExpanded);
-        mobileNav.classList.toggle('active');
-        mainContent.classList.toggle('nav-active'); // To push main content
-        document.body.classList.toggle('no-scroll'); // To prevent scrolling when menu is open
+        if (isExpanded) {
+            closeMenu();
+        } else {
+            mobileNavToggle.setAttribute('aria-expanded', 'true');
+            mobileNav.classList.add('active');
+            overlay.classList.add('active');
+            document.body.classList.add('no-scroll');
+        }
     });
+
+    // Close menu by clicking overlay
+    overlay.addEventListener('click', closeMenu);
 
 });
