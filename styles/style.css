@@ -224,10 +224,18 @@ nav .desktop-nav li a:active, nav .desktop-nav li a:hover {
 .cta-button {
     background-color: #f36f21;
     color: #fff;
-    padding: 15px 30px;
+    padding: 15px 40px; 
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    border-radius: 50px; 
+    transition: background-color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.cta-button:hover {
+    background-color: #d96819; 
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
 }
 
 .scroll-down-arrow {
